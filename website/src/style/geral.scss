@@ -1,0 +1,67 @@
+@import "./variables.scss";
+
+.website {
+    text-align: center;
+    background-image: linear-gradient(
+        to top,
+        rgba(245, 246, 252, 0.22),
+        rgba(41, 18, 1, 1)
+      ),
+      url("../images/image_homepage.png");
+    display: grid;
+    
+
+    h1, a {
+      font-family: "Oswald", sans-serif !important;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+    
+    }
+
+    p {
+      font-family: "Lora", sans-serif !important;
+    }
+  }
+
+  .menu {
+    overflow: auto;
+    margin: 2rem 4rem;
+    height: min-content;
+  
+    &-logo {
+      width: 10%;
+      float: left;
+    }
+  
+    &-items {
+      width: 10%;
+      float: right;
+  
+      ul{
+          display: flex;
+          list-style: none;
+          justify-content: right;
+          text-decoration: none;
+          padding: 0 2rem 0 2rem;
+          
+            img {
+              justify-content: left !important;
+            }
+          
+            li {
+              a {
+                text-decoration: none;
+                color: white;
+                padding: 0rem 1rem;
+                font-size: $font_size_big;
+                font-weight: bold;
+                text-transform: uppercase;
+                &:hover {
+                  color: black;
+                }
+              }
+            }
+        }
+    }
+  }

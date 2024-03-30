@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.header {
+  min-height: 100vh;
+  font-size: $font_size_big;
+  color: $color_white;
+  padding: 10rem 10rem 0 10rem;
+
+  button {
+    margin: 4rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border-style: none;
+    border-width: 0;
+    background-color: $color_bege;
+
+    &:hover {
+      background-color: $color_browndark;
+      color: $color_white;
+    }
+  }
+}
